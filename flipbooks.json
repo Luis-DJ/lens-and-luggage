@@ -1,0 +1,23 @@
+[
+  {
+    "id": "sample-demo",
+    "title": "Coastal Light",
+    "location": "Bay of Fires, Tasmania",
+    "year": "2026",
+    "pages": 6,
+    "pdf": "flipbooks/sample-demo/book.pdf",
+    "accent": "#8a5a34",
+    "tint": "#2b4a5c"
+  },
+
+  {
+    "id": "Chilean_Patagonia",
+    "title": "Marble Cathedral",
+    "location": "General Carrera Lake, Chile ",
+    "year": "2026",
+    "pages": 6,
+    "pdf": "flipbooks/Chilean_Patagonia/Marble_Cathedral.pdf",
+    "accent": "#8a5a34",
+    "tint": "#2b4a5c"
+  }
+]
