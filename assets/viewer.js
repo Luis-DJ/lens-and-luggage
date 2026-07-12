@@ -82,8 +82,19 @@
   // an arbitrary guessed shape — inside the available stage box.
   function computePageDims() {
     const rect = stageEl.getBoundingClientRect();
-    const availW = Math.max(200, Math.floor(rect.width) - 32);
-    const availH = Math.max(260, Math.floor(rect.height) - 32);
+    // getBoundingClientRect() reports the padding-box, but .viewer-stage has
+    // its own CSS padding (1.25rem 4vw). That padding was never subtracted
+    // here, so the computed spread could come out wider than #book-frame's
+    // `max-width: 92vw` cap. PageFlip then locks #book-container to that
+    // too-wide size regardless, and the overflow — always the right-hand
+    // page — got silently sliced off by #book-frame's `overflow: hidden`.
+    // Subtracting the real padding keeps this calculation and that CSS cap
+    // in agreement at any viewport size.
+    const cs = getComputedStyle(stageEl);
+    const padX = (parseFloat(cs.paddingLeft) || 0) + (parseFloat(cs.paddingRight) || 0);
+    const padY = (parseFloat(cs.paddingTop) || 0) + (parseFloat(cs.paddingBottom) || 0);
+    const availW = Math.max(200, Math.floor(rect.width - padX) - 32);
+    const availH = Math.max(260, Math.floor(rect.height - padY) - 32);
     const spreadMultiplier = isNarrow ? 1 : 2;
     const spreadAspect = pageAspect * spreadMultiplier; // width/height of the whole spread
     const containerAspect = availW / availH;
