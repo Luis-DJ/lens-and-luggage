@@ -19,5 +19,17 @@
     "pdf": "flipbooks/Chilean_Patagonia/Marble_Cathedral.pdf",
     "accent": "#8a5a34",
     "tint": "#2b4a5c"
+  },
+
+  {
+    "id": "100_Landscapes",
+    "title": "Patagonia Landscapes",
+    "location": "Torres del Paine National Park, Chile ",
+    "year": "2025",
+    "pages": 6,
+    "pdf": "flipbooks/100_Landscapes/Top_Patagonia_Landscapes.pdf",
+    "accent": "#8a5a34",
+    "tint": "#2b4a5c"
   }
+
 ]
