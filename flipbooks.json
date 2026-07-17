@@ -1,14 +1,4 @@
 [
-  {
-    "id": "sample-demo",
-    "title": "Coastal Light",
-    "location": "Bay of Fires, Tasmania",
-    "year": "2026",
-    "pages": 6,
-    "pdf": "flipbooks/sample-demo/book.pdf",
-    "accent": "#8a5a34",
-    "tint": "#2b4a5c"
-  },
 
   {
     "id": "Chilean_Patagonia",
@@ -23,11 +13,22 @@
 
   {
     "id": "100_Landscapes",
-    "title": "Patagonia Landscapes",
+    "title": "Torres del Paine Landscapes",
     "location": "Torres del Paine National Park, Chile ",
     "year": "2025",
     "pages": 6,
     "pdf": "flipbooks/100_Landscapes/Top_Patagonia_Landscapes.pdf",
+    "accent": "#8a5a34",
+    "tint": "#2b4a5c"
+  },
+
+  {
+    "id": "Ruta_7",
+    "title": "Trip to Carretera Austral",
+    "location": "Patagonia, Chile ",
+    "year": "2026",
+    "pages": 6,
+    "pdf": "flipbooks/Ruta_7/ruta_7_v1.pdf",
     "accent": "#8a5a34",
     "tint": "#2b4a5c"
   }
