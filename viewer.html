@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" class="viewer-html">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flipbook — Lens &amp; Luggage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="viewer-body">
+
+<div class="viewer-page">
+
+  <div class="viewer-top">
+    <a class="back-link" href="index.html">&larr; back to light table</a>
+    <div class="viewer-caption">
+      <div class="title" id="cap-title">&nbsp;</div>
+      <div class="meta" id="cap-meta">&nbsp;</div>
+    </div>
+  </div>
+
+  <div class="viewer-stage">
+    <div id="viewer-loading" class="viewer-loading">Loading flipbook…</div>
+    <div id="book-frame" style="display:none;">
+      <div id="book-container"></div>
+    </div>
+  </div>
+
+  <div class="viewer-controls" id="viewer-controls" style="display:none;">
+    <button id="prev-btn" aria-label="Previous page">&#8249; prev</button>
+    <span id="page-indicator">— / —</span>
+    <button id="next-btn" aria-label="Next page">next &#8250;</button>
+  </div>
+
+</div>
+
+<!-- PDF.js: renders each PDF page to a canvas -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<!-- page-flip: the page-turn interaction/animation -->
+<script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
+
+<script src="assets/viewer.js"></script>
+</body>
+</html>
